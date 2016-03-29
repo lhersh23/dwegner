@@ -1,0 +1,565 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	font-family: 'OpenSansReg', 'Helvetica Light', Arial;
+	font-size: 1em; /* 16px */
+}
+
+
+
+
+/* ---------------------- MAIN STRUCTURE ---------------------- */
+#container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	margin-bottom: 22px;
+}
+
+#content {
+	width: 70%;
+	margin: 0 auto;
+	line-height: 23px;
+	height: 100%;
+}
+
+#content p {
+	font-size: .875em; /* 14px */
+	color: #606060;
+}
+
+footer {
+	width: 70%;
+	margin: 0 auto;
+	margin-left: 15%;
+	margin-top: 50px;
+	overflow: auto;
+}
+
+footer p {
+	font-size: .875em; /* 14px */
+	color: #B3B3B3;
+	clear: both;
+}
+
+
+
+
+
+
+/* ---------------------- HEADER SLIDESHOW ---------------------- */
+.headerImg {
+	z-index: 1;
+	height: 500px;
+	width: 100%;
+	background: url('images/SudiesInSolitude2.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+/* ---------------------- NAVIGATION ---------------------- */
+
+nav {
+	background-color: #4D4D4D;
+	height: 132px;
+	overflow: auto;
+	margin-bottom: 22px;
+}
+
+nav #logo {
+	height: 77px;
+	width: 198px;
+	float: left;
+}
+
+nav ul {
+	height: 75px;
+	line-height: 1em; /* 16px */
+}
+
+nav ul li {
+
+}
+
+nav li {
+	font-size: .875em; /* 14px */
+	text-transform: uppercase;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #B3B3B3;
+}
+
+nav li a:hover {
+	color: #FFFFFF;
+}
+
+
+nav .primaryNav {
+	width: 100px;
+	float: left;
+	margin: 0;
+}
+
+nav .secondaryNav {
+	width: 175px;
+	float: left;
+	margin: 0;
+}
+
+
+nav.navShort {
+	width: 46.09375%;  /* 473px of 1024px = 46.09375% */
+	min-width: 600px;
+	width: 600px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	padding-left: 15%;
+	z-index: 10;
+	top: 368px;
+	position: relative;
+	overflow: hidden;
+}
+
+nav.navLong {
+	width: 100%;
+	padding: 28px 15%;
+}
+
+
+
+
+/* ---------------------- TYPOGRAPHY & LINKS ---------------------- */
+#content h1 {
+	font-size: 1.5em; 
+	color: #202020;
+	font-weight: normal;
+	margin-bottom: 15px;
+	font-family: 'OpenSansLte';
+}
+
+h2 {
+	color: #B3B3B3;
+	font-size: 1.125em; /* 18px */
+}
+
+h2 a {
+	text-decoration: none;
+	color: #B3B3B3;
+}
+
+h2 a:hover {
+	color: #4D4D4D;
+}
+
+h3 {
+	font-size: 1.25em; 
+	color: #202020;
+}
+
+h4 {
+	color: #4D4D4D;
+	font-size: 1.125em;
+}
+
+#content h5 {
+	margin-bottom: 0;
+	margin-top: 30px;
+	font-family: 'OpenSansItal';
+}
+
+h6 {
+	font-size: 1em; 
+	color: #202020;
+}
+
+.cvBegin h6 {
+	margin-top: 30px;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: color 0.1s ease-in-out;
+	-moz-transition: color 0.1s ease-in-out;
+	-ms-transition: color 0.1s ease-in-out;
+	-o-transition: color 0.1s ease-in-out;
+	transition: color 0.1s ease-in-out;
+}
+
+#content p a {
+	color: #202020;
+}
+
+#content p a:hover {
+	color: #B3B3B3;
+}
+
+#artSlideShow .descrip p {
+	color: #4D4D4D;
+	margin-top: 0;
+	font-size: .875em;
+}
+
+em {
+	font-family: 'OpenSansItal';
+	font-weight: normal;
+}
+
+#content .bibliography p, .exhibition p, .cvBegin p, #content .bibliography h5:first-of-type, #content .exhibition h5:first-of-type {
+	margin-top: 0;
+}
+
+.current a {
+	color: #ffffff;
+}
+
+
+
+
+
+/* ---------------------- WORK SERIES PAGE ---------------------- */
+.workColumn {
+	width: 158px;
+	height: 425px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.workImage {
+	width: 158px;
+	height: 382px;
+	margin-bottom: 20px;
+}
+
+/*-------- WORK SERIES MEDIA QUERY --------*/
+@media (max-width: 1100px) {
+	.workColumn {
+		width: 130px;
+	}
+
+	.workImage {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+/* ---------------------- SLIDESHOW STYLES ---------------------- */
+#artSlideShow {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#artSlideShow .mainImage {
+	width: 464px;
+	height: 532px;
+	float: left;
+	margin-right: 40px;
+}
+
+#artSlideShow .descrip {
+	width: 352px;
+	height: 120px;
+	float: left;
+}
+
+#artSlideShow #thumbSelect {
+	width: 352px;
+	height: 370px;
+	float: left;
+	overflow: auto;
+}
+
+#artSlideShow .thumbnail {
+	width: 79px;
+	height: 79px;
+	background-color: #4D4D4D;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+/* ---------------------- CONTACT FORM ---------------------- */
+#contact {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#contact form {
+	width: 45%;
+	max-width: 400px;
+	float: left;
+	margin-right: 2.5%;
+}
+
+#contact fieldset {
+	border: none;
+}
+
+#contact input, #contact textarea {
+	width: 100%;
+	margin: 5px 0px;
+	font-family: 'OpenSansReg', 'Helvetica', Arial;
+	color: #606060;
+	border: 1px solid #B3B3B3;
+	padding: 5px;
+	font-size: .875em;
+}
+
+#contact input:focus, #contact:focus {
+	color: #202020;
+}
+
+#contact textarea {
+	height: 200px;
+}
+
+#contact #contactInfo {
+	width: 45%;
+	max-width: 400px;
+	float: left;
+	margin-left: 2.5%;
+}
+
+#contact .button {
+	width: 48%;
+	height: 35px;
+	float: right;
+	background-color: #B3B3B3;
+	color: #4D4D4D;
+}
+
+#contact .button:hover {
+	color: #ffffff;
+	-webkit-transition: color 0.1s ease-in-out;
+	-moz-transition: color 0.1s ease-in-out;
+	-ms-transition: color 0.1s ease-in-out;
+	-o-transition: color 0.1s ease-in-out;
+	transition: color 0.1s ease-in-out;
+}
+
+
+
+
+/* ---------------------- SUPPORTING STYLES ---------------------- */
+
+.recent {
+	width: 150px;
+	height: 250px;
+	float: left;
+	margin-left: 22px;
+}
+
+.recent p {
+	margin: 0;
+}
+
+.recentImage {
+	max-width: 100%;
+
+}
+
+.recentImgContain {
+	width: 77.5139665%;
+	max-width: 555px;
+	height: 156px;
+	float: left;
+	display: block;
+}
+
+/*-------- RECENT MEDIA QUERY --------*/
+@media (max-width: 1100px) {
+	.recent {
+		width: 100px;
+		font-size: .8em;
+		line-height: 20px;
+	}
+}
+
+
+.shorten {
+	width: 75%;
+	max-width: 900px;
+}
+
+.exhibition {
+	width: 45%;
+	height: 100%;
+	float: left;
+	margin-right: 5%;
+}
+
+.bibilography {
+	width: 45%;
+	height: 100%;
+	float: left;
+}
+
+.cvBegin {
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* ---------------------- PIKA CHOOSE SLIDER STYLES ---------------------- */
+
+.pikachoose {
+	width: 100%; 
+	height: 532px;
+	margin: 0 auto;
+	margin-left: 20px;
+	margin-top: 20px;
+	position:relative;
+}
+
+/* Style the thumbnails */
+.pika-thumbs{ 
+	height: 395px; 
+	width: 400px;
+	overflow: auto;
+	position: absolute;
+	top: 120px;
+	left: 450px;
+}
+
+.pika-thumbs li {
+	width: 79px; 
+	height: 79px; 
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0; 
+	overflow: hidden;
+	float: left; 
+	list-style-type: none;
+	cursor: pointer;
+}
+
+
+.pika-thumbs li .clip {
+	height: 100%;
+}
+
+
+/* The stage is the wrapper. The image fills 100% the height of the stage */
+.pika-stage{
+	width: 464px;
+}
+
+.pika-textnav, .pika-imgnav, .pika-counter, .pika-loader {
+	display: none;
+}
+
+.pika-stage {
+	position: relative; 
+	background: #fafafa; 
+	text-align:center; 
+}
+
+.pika-stage img{
+	height: 100%;
+}
+
+.pika-stage .caption {
+	width: 352px;
+	height: 120px;
+	position: absolute; 
+	left: 490px;
+	top: 0;
+	z-index: 10;
+	text-align: left;
+}
+
+.pika-stage .caption p {
+	margin: 0;
+}
+
+
+
+/* If using user thumbnails there's a pause well the new large image loads. This is the loader for that */		
+.pika-loader { 
+	background:url(loading.gif) 3px 3px no-repeat; 
+	color:white; 
+	width:60px; 
+	font-size:11px; 
+	padding:5px 3px; 
+	text-align:right; 
+	position:absolute; 
+	top:15px; 
+	right:15px; 
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------- FONT FACES ---------------------- */
+
+@font-face {
+    font-family: 'OpenSansReg';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'OpenSansItal';
+    src: url('fonts/OpenSans-Italic-webfont.eot');
+    src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSansLte';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
